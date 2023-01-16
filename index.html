@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  
+
+<link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/jumbotron/">
+   
+
+    
+    <script src="js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <script src="js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  <style>
+    .c-item {
+  height: 480px;
+}
+
+.c-img {
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.6);
+}
+
+.b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Cavite State University</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+              <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5 5 5Z"/>
+            </svg>Home</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="grade.html">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+              </svg> Grades
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="registration.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-text" viewBox="0 0 16 16">
+              <path d="M5 4a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm-.5 2.5A.5.5 0 0 1 5 6h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zM5 8a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm0 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1H5z"/>
+              <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm10-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1z"/>
+            </svg>Virtual Registration Form</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="subject.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-folder" viewBox="0 0 16 16">
+              <path d="M.54 3.87.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3h3.982a2 2 0 0 1 1.992 2.181l-.637 7A2 2 0 0 1 13.174 14H2.826a2 2 0 0 1-1.991-1.819l-.637-7a1.99 1.99 0 0 1 .342-1.31zM2.19 4a1 1 0 0 0-.996 1.09l.637 7a1 1 0 0 0 .995.91h10.348a1 1 0 0 0 .995-.91l.637-7A1 1 0 0 0 13.81 4H2.19zm4.69-1.707A1 1 0 0 0 6.172 2H2.5a1 1 0 0 0-1 .981l.006.139C1.72 3.042 1.95 3 2.19 3h5.396l-.707-.707z"/>
+            </svg>Subjects</a>
+          </li>
+        </ul>
+        
+      </div>
+    </div>
+  </nav>
+</nav>
+
+  <!-- Carousel -->
+  <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+
+    <div class="carousel-inner">
+      <div class="carousel-item active c-item">
+        <iframe height="100%" width="100%" src="https://www.youtube.com/embed/PlF35Kwp9BI?autoplay=1&mute=1&controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen alt="slide1"></iframe>
+        
+        <div class="carousel-caption bot-0 mt-4">
+          <p class="text-uppercase fs-3 mt-5">Continous Growth</p>
+          <p class="display-1 fw-bolder text-capitalize">Globally competitive</p>
+          <button class="btn btn-primary px-4 py-2 fs-5 mt-1">Enroll Now</button>
+        </div>
+      </div>
+      <div class="carousel-item c-item">
+        <iframe height="100%" width="100%" src="https://www.youtube.com/embed/PlF35Kwp9BI?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen alt="slide2"></iframe>
+        <div class="carousel-caption bot-0 mt-4">
+          <p class="text-uppercase fs-3 mt-5">Take Action</p>
+          <p class="display-1 fw-bolder text-capitalize">Morally Upright</p>
+          <button class="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal"
+            data-bs-target="#booking-modal">Enroll Now</button>
+        </div>
+      </div>
+      <div class="carousel-item c-item">
+        <iframe height="100%" width="100%" src="https://www.youtube.com/embed/PlF35Kwp9BI?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen alt="Slide3"></iframe>
+        <div class="carousel-caption bot-0 mt-4">
+          <p class="text-uppercase fs-3 mt-5">Course Offered</p>
+          <ul  class=" fw-bolder text-capitalize" style="list-style: none;">
+           <li> Bachelor of Secondary Education major in English</li>
+            <li>Business Management major in Marketing</li> 
+           <li> BS Hospitality Management (formerly BS Hotel and Restaurant Management)</li>
+            <li>Bachelor of Science in Information Technology</li> 
+           <li>Bachelor of Science in Office Administration</li> 
+           <li>BS Psychology</li> 
+          </ul>
+          <button class="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal"
+            data-bs-target="#booking-modal">Enroll Now</button>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>  
+
+  <div class="b-example-divider"></div>
+
+ 
+  <div class="container" style="margin-top: 30px;">
+    <div class="h-100 p-5 bg-light border rounded-3">
+      <h2 class="center">VISION, MISSION, GOALS</h2>
+    <div class="row align-items-md-stretch">
+      <div class="col-md-4">
+        <div class="h-100 p-5 text-bg-dark rounded-3">
+          <h2>University Mission</h2>
+          <p>The Premier University in historic Cavite recognized for excellence in the development of globally competitive and morally upright individuals.
+
+          </p>
+          
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="h-100 p-5 bg-light border rounded-3">
+          <h2 style="text-align: center">University Objectives</h2>
+          <p>Cavite State University shall provide excellent, equitable, and relevant educational opportunities in the arts, sciences, and technology through quality instruction and responsive research and developmental activities.</p>
+         
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="h-100 p-5  text-bg-dark bg-primary border rounded-3">
+          <h2 style="text-align: center;">Campus Goals</h2>
+          <pre>The Campus shall endeavor to achieve the following goals:
+1.   Provide high quality instruction in order to produce skilled, morally upright, and globally competitive graduates;
+2.   Develop and pursue advanced research abilities through arts, sciences, and technology to support instruction; and
+3.   Develop and conduct extension activities that will empower local people and communities</pre>
+<h2 style="text-align: center;">Core Values</h2>
+<pre style="text-align: center;">Truth -  Excellence  - Service</pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="b-example-divider"></div>
+
+  <div class="container px-4 py-5" id="icon-grid" >
+    <h2 class="pb-2 border-bottom" > Core Values</h2>                         
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+      <div class="col d-flex align-items-start">
+        <svg class="bi text-muted flex-shrink-0 me-3" width="10.75em" height="1.75em"><use xlink:href="#bootstrap"/></svg>
+        <div>
+          <h3 class="fw-bold mb-0 fs-4">  Truth  </h3>
+         
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <svg class="bi text-muted flex-shrink-0 me-3" width="10.75em" height="1.75em"><use xlink:href="#cpu-fill"/></svg>
+        <div>
+          <h3 class="fw-bold mb-0 fs-4"> Excellence </h3>
+          
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <svg class="bi text-muted flex-shrink-0 me-3" width="15.75em" height="1.75em"><use xlink:href="#calendar3"/></svg>
+        <div>
+          <h3 class="fw-bold mb-0 fs-4">Service</h3>
+          
+        </div>
+      </div>
+     
+      </div>
+    </div>
+  </div>
+
+  <div class="b-example-divider"></div>
+<footer>
+<div class="container">
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <div class="col-md-4 d-flex align-items-center">
+      <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+        <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+      </a>
+      <span class="mb-3 mb-md-0 text-muted">&copy; 2023 CvSU</span>
+    </div>
+
+
+  </footer>
+</div>
+
+</body>
+</html>
